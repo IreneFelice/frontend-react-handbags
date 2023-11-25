@@ -1,9 +1,10 @@
 import './App.css'
 import ButtonComponent from "./components/ButtonComponent/ButtonComponent.jsx";
-import bag1 from './assets/bag_1.png'
-import bag2 from './assets/bag_2.png'
-import bag3 from './assets/bag_3.png'
-import bag4 from './assets/bag_4.png'
+// import bag1 from './assets/bag_1.png'
+// import bag2 from './assets/bag_2.png'
+// import bag3 from './assets/bag_3.png'
+// import bag4 from './assets/bag_4.png'
+import ProductItem from "./components/ProductItems/ProductItem.jsx";
 
 function App() {
   return (
@@ -17,33 +18,34 @@ function App() {
 
 
           <main>
-              <article>
-                  <span>Best seller</span>
-                  <img src={bag1} alt="afbeelding mist"/>
-                  <p>Roze tas</p>
-                  <h4>€1000,-</h4>
-              </article>
-
-              <article>
-                  <span>Duuuuuur!</span>
-                  <img src={bag2} alt="afbeelding mist"/>
-                  <p>Bruine tas</p>
-                  <h4>€1.000.000,-</h4>
-              </article>
-
-              <article>
-                  <span>New collection</span>
-                  <img src={bag3} alt="afbeelding mist"/>
-                  <p>Groene tas</p>
-                  <h4>€7,50</h4>
-              </article>
-
-              <article>
-                  <span>New collection</span>
-                  <img src={bag4} alt="afbeelding mist"/>
-                  <p>Gele tas</p>
-                  <h4>Prijs onbekend</h4>
-              </article>
+              <ProductItem
+              extraAttention={true}
+              contentExtraAttention="Best Seller"
+              productPlace="1"
+              productTitle="The handy bag"
+              productPrize="400,-"
+              />
+              <ProductItem
+                  extraAttention={true}
+                  contentExtraAttention="Best Seller"
+                  productPlace="2"
+                  productTitle="The stylish bag"
+                  productPrize="250,-"
+              />
+              <ProductItem
+                  extraAttention={true}
+                  contentExtraAttention="New collection"
+                  productPlace="3"
+                  productTitle="The simple bag"
+                  productPrize="300,-"
+              />
+              <ProductItem
+                  extraAttention={true}
+                  contentExtraAttention="New collection"
+                  productPlace="4"
+                  productTitle="The trendy bag"
+                  productPrize="150,-"
+              />
           </main>
   </>
         )
