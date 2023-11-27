@@ -1,10 +1,9 @@
 import './App.css'
 import ButtonComponent from "./components/ButtonComponent/ButtonComponent.jsx";
-// import bag1 from './assets/bag_1.png'
-// import bag2 from './assets/bag_2.png'
-// import bag3 from './assets/bag_3.png'
-// import bag4 from './assets/bag_4.png'
+import brand from './assets/brand.png'
+import story from './assets/our_story.png'
 import ProductItem from "./components/ProductItems/ProductItem.jsx";
+import TileSection from "./components/Tiles/Tile.jsx";
 
 function App() {
   return (
@@ -47,8 +46,44 @@ function App() {
                   productPrize="150,-"
               />
           </main>
-  </>
-        )
+
+
+          <footer>
+              <TileSection
+                  tileImage={false}
+                  tileImageName={brand}
+                  tileTitle='The Brand'
+                  tileContent='blablabla'
+                  tileExtraParagraph1='lalala'
+                  tileExtraParagraph2='blablabla'
+              />
+              <TileSection
+                  tileImage={true}
+                  tileImageName={brand}
+                  tileTitle='Afbeelding'
+                  tileContent=''
+                  tileExtraParagraph1=''
+                  tileExtraParagraph2=''
+              />
+              <TileSection
+                  tileImage={true}
+                  tileImageName={story}
+                  tileTitle='Afbeelding'
+                  tileContent=''
+                  tileExtraParagraph1=''
+                  tileExtraParagraph2=''
+              />
+              <TileSection
+                  tileImage={false}
+                  tileImageName={brand}
+                  tileTitle='our story'
+                  tileContent='blablabla lalala blablabla'
+                  tileExtraParagraph1=''
+                  tileExtraParagraph2=''
+              />
+
+          </footer>
+      </>)
 }
 
 export default App

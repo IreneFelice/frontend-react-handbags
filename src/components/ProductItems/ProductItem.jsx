@@ -2,6 +2,7 @@ import bag1 from "../../assets/bag_1.png";
 import bag2 from "../../assets/bag_2.png";
 import bag3 from "../../assets/bag_3.png";
 import bag4 from "../../assets/bag_4.png";
+import './ProductItem.css'
 
 function ProductItem (props){
 
